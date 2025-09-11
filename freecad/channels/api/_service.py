@@ -341,7 +341,7 @@ class ServiceClient:
             headers={"Content-Type": "application/json"},
         )
         try:
-            with _request.urlopen(req, timeout=timeout) as resp:
+            with _request.urlopen(req, timeout=timeout) as resp:  #nosec B310: False positive
                 if resp.status != 200:
                     msg = f"Failed to send service request to {url}"
                     raise RuntimeError(msg)

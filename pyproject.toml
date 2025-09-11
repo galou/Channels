@@ -1,6 +1,6 @@
 [project]
 name = "Channels"
-version = "0.1.0.dev2"
+version = "0.1.0.dev3"
 description = "FreeCAD Channels"
 readme = "README.md"
 requires-python = ">=3.10"
@@ -31,6 +31,8 @@ dev = [
     "typer",
     "packaging",
     "rich",
+    "bandit>=1.8.6",
+    "defusedxml>=0.7.1",
 ]
 
 [tool.ruff]
